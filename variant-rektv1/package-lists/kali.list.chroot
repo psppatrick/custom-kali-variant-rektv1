@@ -1,46 +1,38 @@
-# You always want those
+﻿# You always want those
 kali-desktop-live
 
 # Kali applications
 #firefox-esr
 openssh-server
+nmap
 ncrack
-metasploit-framework
-john
+sqlmap
 aircrack-ng
-wifite
+john
+hashcat
 wireshark
-arpscan
+metasploit-framework
+wifite
 dnsmap
 ismtp
-nmap
 cowpatty
 kismet
 burpsuite
-sqlmap
-zhpproxy
 reaver
-ettercap
+ettercap-graphical
 mitmproxy
-sslstrip
-hashcat
 httptunnel
 webshells
-git-core 
-mono
-monodevelop
-mono-gmcs
-
 # Custom Specific Tools
-apache2
-mysql-server
-mysql-client
-php5-mysql
-phpmyadmin
-vsftpd
-git
+adminer
+php7.2
+php7.2-mysql
+mysql-common
+mysql-sandbox
 nodejs
 npm
+apache2
+vsftpd
 
 # A light desktop
 kali-desktop-xfce
