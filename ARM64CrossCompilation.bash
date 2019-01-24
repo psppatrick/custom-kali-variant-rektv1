@@ -36,6 +36,15 @@ tar xvf gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux.tar.xz
 sleep 5s
 
 export ARCH=arm64
-export CROSS_COMPILE=~/arm-stuff/kernel/toolchains/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux
+export CROSS_COMPILE=~/arm-stuff/kernel/toolchains/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin
+
+sleep 1s
+
+cd ~/kali-arm-build-scripts
+
+./build-deps.sh
+
+./rpi3-64-lite.sh 2.0
+#./rpi3-64.sh
 
 echo "Done!" $?
