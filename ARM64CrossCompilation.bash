@@ -38,6 +38,15 @@ sleep 5s
 export ARCH=arm64
 export CROSS_COMPILE=~/arm-stuff/kernel/toolchains/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin
 
+#ADDING CUSTOM PACKAGES???
+#
+#
+#export packages="xfce4 kali-menu wpasupplicant kali-defaults initramfs-tools u-boot-tools openssh-server nmap ncrack sqlmap aircrack-ng john hashcat wireshark metasploit-framework wifite dnsmap ismtp cowpatty kismet burpsuite reaver ettercap-graphical mitmproxy httptunnel webshells adminer php7.2 php7.2-mysql php7.2-json php7.2-common mysql-common mysql-sandbox nodejs npm apache2 vsftpd"
+#export architecture="arm64"
+#To be added
+#
+#
+
 sleep 1s
 
 cd ~/kali-arm-build-scripts
@@ -45,6 +54,6 @@ cd ~/kali-arm-build-scripts
 ./build-deps.sh
 
 ./rpi3-64-lite.sh 2.0
-#./rpi3-64.sh
+#./rpi3-64.sh 2.0
 
 echo "Done!" $?
