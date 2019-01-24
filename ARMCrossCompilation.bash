@@ -5,7 +5,7 @@
 #apt install git-core gnupg flex bison gperf libesd0-dev build-essential \
 # libesd0-dev not found
 
-apt install git-core gnupg flex bison gperf libbison-dev build-essential \
+apt install git gnupg flex bison gperf libbison-dev build-essential \
 
 #zip curl libncurses5-dev zlib1g-dev gcc-multilib g++-multilib
 # zips not found
