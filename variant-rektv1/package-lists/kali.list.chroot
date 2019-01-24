@@ -27,6 +27,8 @@ webshells
 adminer
 php7.2
 php7.2-mysql
+php7.2-json
+php7.2-common
 mysql-common
 mysql-sandbox
 nodejs
