@@ -17,7 +17,7 @@ apt update
 #apt install ia32-libs apt-cacher-ng
 #ia32-libs replaced with lib32z1
 
-apt install lib32z1 apt-cacher-ng
+apt install lib32z1 
 
 sleep 1s
 
