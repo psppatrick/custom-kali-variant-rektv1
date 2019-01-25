@@ -1,0 +1,46 @@
+# You always want those
+kali-desktop-live
+
+# Kali applications
+#firefox-esr
+openssh-server
+ncrack
+metasploit-framework
+john
+aircrack-ng
+wifite
+wireshark
+arpscan
+dnsmap
+ismtp
+nmap
+cowpatty
+kismet
+burpsuite
+sqlmap
+zhpproxy
+reaver
+ettercap
+mitmproxy
+sslstrip
+hashcat
+httptunnel
+webshells
+git-core 
+mono
+monodevelop
+mono-gmcs
+
+# Custom Specific Tools
+apache2
+mysql-server
+mysql-client
+php5-mysql
+phpmyadmin
+vsftpd
+git
+nodejs
+npm
+
+# A light desktop
+kali-desktop-xfce
