@@ -25,10 +25,14 @@ httptunnel
 webshells
 # Custom Specific Tools
 adminer
-php7.2
-php7.2-mysql
-php7.2-json
-php7.2-common
+php-common
+#php7.2
+#php7.2-mysql
+#php7.2-json
+#php7.2-common
+php-mysql
+php
+php-json
 mysql-common
 mysql-sandbox
 nodejs
