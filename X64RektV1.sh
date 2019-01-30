@@ -32,5 +32,5 @@ cd ~/ISOBuilding/live-build-config/
 
 sleep 0.05
 
-echo "Start time was" $startTime "Finish time was" $finishTime >> x64RektLog.txt
+echo "Start time was" $startTime "Finish time was" $finishTime >> ~/x64BuildLog.txt
 

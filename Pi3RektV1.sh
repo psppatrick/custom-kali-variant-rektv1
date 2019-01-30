@@ -1,5 +1,7 @@
 #!/bin/bash
 
+startTime=$(date)
+
 apt update
 
 mkdir -p /root/arm-stuff
@@ -28,4 +30,6 @@ cp ~/arm-stuff/custom-kali-variant-rektv1/rpi3-nexmon-Rektv1.sh ~/arm-stuff/kali
 
 sleep 0.05
 
-./rpi3-nexmon-Rektv1.sh 1.0; echo $?
+./rpi3-nexmon-Rektv1.sh 1.0; echo $?; finishTime=$(date); echo "Time Started" $startTime "Time Finished" $finishTime >> ~/Pi3buildlog.txt
+
+echo "Finished!"
