@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+startTime=$(date)
+
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root"
    exit 1
@@ -416,3 +418,7 @@ fi
 # wrong.
 echo "Cleaning up the temporary build files..."
 rm -rf "${basedir}"
+
+finishTime=$(date)
+
+echo "Start time was" $startTime "Finish time was" $finishTime >> x64RektLog.txt

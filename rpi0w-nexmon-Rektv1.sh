@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+startTime=$(date)
+
 # This is the Raspberry Pi Kali 0-W Nexmon ARM build script - http://www.kali.org/downloads
 # A trusted Kali Linux image created by Offensive Security - http://www.offensive-security.com
 # Maintained by @binkybear
@@ -508,3 +510,7 @@ fi
 # wrong.
 echo "Cleaning up the temporary build files..."
 rm -rf "${basedir}"
+
+finishTime=$(date)
+
+echo "Start time was" $startTime "Finish time was" $finishTime >> x64RektLog.txt

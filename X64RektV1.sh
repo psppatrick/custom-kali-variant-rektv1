@@ -1,5 +1,7 @@
 #!/bin/bash
 
+startTime=$(date)
+
 apt update
 
 sleep 0.05
@@ -27,3 +29,10 @@ cp custom-kali-variant-rektv1/UpdateMe.sh live-build-config/kali-config/common/i
 cd ~/live-build-config/
 
 ./build.sh --variant light --verbose; echo $?
+
+sleep 0.05
+
+finishTime=$(date)
+
+echo "Start time was" $startTime "Finish time was" $finishTime >> x64RektLog.txt
+
