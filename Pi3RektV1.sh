@@ -24,9 +24,7 @@ echo "Will now Build RektV1 for Pi3"
 
 sleep 0.05
 
-cd..
-
-cp custom-kali-variant-rektv1/rpi3-nexmon-Rektv1.sh kali-arm-build-scripts/rpi3-nexmon-Rektv1.sh
+cp ~/arm-stuff/custom-kali-variant-rektv1/rpi3-nexmon-Rektv1.sh ~/arm-stuff/kali-arm-build-scripts/rpi3-nexmon-Rektv1.sh
 
 sleep 0.05
 
