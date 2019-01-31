@@ -26,6 +26,8 @@ mkdir ~/ISOBuilding/live-build-config/kali-config/variant-custom/package-lists
 
 cp ~/ISOBuilding/custom-kali-variant-rektv1/kali.list.chroot ~/ISOBuilding/live-build-config/kali-config/variant-custom/package-lists/kali.list.chroot; echo $?
 
+cp ~/ISOBuilding/custom-kali-variant-rektv1/custom.list.chroot ~/ISOBuilding/live-build-config/kali-config/variant-custom/package-lists/custom.list.chroot
+
 cp ~/ISOBuilding/custom-kali-variant-rektv1/InstallLOIC.sh ~/ISOBuilding/live-build-config/kali-config/common/includes.chroot/InstallLOIC.sh
 
 cp ~/ISOBuilding/custom-kali-variant-rektv1/UpdateMe.sh ~/ISOBuilding/live-build-config/kali-config/common/includes.chroot/UpdateMe.sh
@@ -40,4 +42,4 @@ echo "Start time was" $startTime "Finish time was" $finishTime >> ~/x64BuildLog.
 
 echo "Moving File to the exit directory"
 
-cp 
+cp -r ~/ISOBuilding/kali-live-build/images /mnt/hgfs/00repo/images
