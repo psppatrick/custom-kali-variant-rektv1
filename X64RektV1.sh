@@ -6,7 +6,7 @@ apt update
 
 sleep 0.05
 
-apt install -y curl git live-build cdebootstrap
+apt install -y curl git live-build cdebootstrap squid
 
 cd ~
 
@@ -19,6 +19,14 @@ sleep 0.05
 git clone git://git.kali.org/live-build-config.git
 
 git clone https://github.com/psppatrick/custom-kali-variant-rektv1.git
+
+####START CACHING THE SHIT SO MULTI-BUILDING IS FASTER####
+
+cp ~/ISOBuilding/custom-kali-variant-rektv1/squidConfig.conf /etc/squid/squid.conf
+
+/etc/init.d/squid restart
+
+###########################################################
 
 mkdir ~/ISOBuilding/live-build-config/kali-config/variant-custom
 
