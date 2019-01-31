@@ -2,7 +2,7 @@
 php
 adminer
 apache2
-mariadb
+mariadb-server
 php-mysql
 php-json
 php-common
