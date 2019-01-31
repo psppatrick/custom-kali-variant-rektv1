@@ -50,4 +50,3 @@ echo "Start time was" $startTime "Finish time was" $finishTime >> ~/x64BuildLog.
 
 echo "Moving File to the exit directory"
 
-cp -r ~/ISOBuilding/kali-live-build/images /mnt/hgfs/00repo/images
