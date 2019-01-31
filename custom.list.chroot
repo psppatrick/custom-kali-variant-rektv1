@@ -1,0 +1,12 @@
+# Additional packages
+php
+adminer
+apache2
+mariadb
+php-mysql
+php-json
+php-common
+mysql-sandbox
+nodejs
+npm
+vsftpd
