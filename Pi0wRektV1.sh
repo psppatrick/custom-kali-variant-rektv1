@@ -22,6 +22,8 @@ mkdir -p arm-stuff
 
 cd arm-stuff
 
+git clone https://github.com/offensive-security/kali-arm-build-scripts.git
+
 git clone https://github.com/psppatrick/custom-kali-variant-rektv1.git
 
 git clone git://github.com/offensive-security/gcc-arm-eabi-linaro-4.6.2.git; echo $?
