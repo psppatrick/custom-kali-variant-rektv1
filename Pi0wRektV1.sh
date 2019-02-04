@@ -39,10 +39,12 @@ chmod 777 ~/arm-stuff/custom-kali-variant-rektv1/rpi0w-nexmon-Rektv1.sh
 
 sleep 0.05
 
-cp ~/arm-stuff/custom-kali-variant-rektv1/rpi0w-nexmon-Rektv1.sh ~/arm-stuff/kali-arm-build-scripts/rpi0w-nexmon-Rektv1.sh
+#cp ~/arm-stuff/custom-kali-variant-rektv1/rpi0w-nexmon-Rektv1.sh ~/arm-stuff/kali-arm-build-scripts/rpi0w-nexmon-Rektv1.sh
+cp ~/arm-stuff/custom-kali-variant-rektv1/rpi0w-nexmon-Rektv1.sh ~/arm-stuff/kali-arm-build-scripts/rpi0w-nexmon.sh
 
 sleep 0.05
 
-~/arm-stuff/kali-arm-build-scripts/rpi0w-nexmon-Rektv1.sh 1.0; echo $?; finishTime=$(date); echo "Time started" $startTime "Time Finished" $finishTime >> ~/Pi0wbuildlog.txt
+#~/arm-stuff/kali-arm-build-scripts/rpi0w-nexmon-Rektv1.sh 1.0; echo $?; finishTime=$(date); echo "Time started" $startTime "Time Finished" $finishTime >> ~/Pi0wbuildlog.txt
+~/arm-stuff/kali-arm-build-scripts/rpi0w-nexmon.sh 1.0; echo $?; finishTime=$(date); echo "Started" $startTime "Finished" $finishTime >> ~/Buildlog4Pi0.txt
 
 echo "Finished!"
