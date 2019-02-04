@@ -52,9 +52,9 @@ desktop="fonts-croscore fonts-crosextra-caladea fonts-crosextra-carlito gnome-th
 #dnsmap not available for Pi3, will build without to start with, and install manually later to find package name
 tools="nmap ncrack sqlmap aircrack-ng john hashcat-data wireshark metasploit-framework wifite ismtp cowpatty kismet burpsuite reaver ettercap-graphical mitmproxy httptunnel webshells"
 services="apache2 atftpd openssh-server mariadb-server adminer php php-mysql php-json nodejs npm"
-extras="alsa-utils bluez bluez-firmware i2c-tools lua5.1 python-configobj python-pip python-requests python-rpi.gpio python-smbus triggerhappy whiptail wpasupplicant"
+#extras="alsa-utils bluez bluez-firmware i2c-tools lua5.1 python-configobj python-pip python-requests python-rpi.gpio python-smbus triggerhappy whiptail wpasupplicant"
 
-packages="${arm} ${base} ${desktop} ${tools} ${services} ${extras}"
+packages="${arm} ${base} ${desktop} ${tools} ${services}"
 architecture="armel"
 # If you have your own preferred mirrors, set them here.
 # After generating the rootfs, we set the sources.list to the default settings.
@@ -203,9 +203,9 @@ EOF
 chmod 644 "${basedir}"/kali-${architecture}/lib/systemd/system/copy-user-wpasupplicant.service
 
 # Bluetooth enabling
-mkdir -p "${basedir}"/kali-${architecture}/etc/udev/rules.d/
-cp "${basedir}"/../misc/pi-bluetooth/50-bluetooth-hci-auto-poweron.rules kali-${architecture}/lib/udev/rules.d/50-bluetooth-hci-auto-poweron.rules
-cp "${basedir}"/../misc/pi-bluetooth/pi-bluetooth+re4son_2.2_all.deb kali-${architecture}/root/pi-bluetooth+re4son_2.2_all.deb
+#mkdir -p "${basedir}"/kali-${architecture}/etc/udev/rules.d/
+#cp "${basedir}"/../misc/pi-bluetooth/50-bluetooth-hci-auto-poweron.rules kali-${architecture}/lib/udev/rules.d/50-bluetooth-hci-auto-poweron.rules
+#cp "${basedir}"/../misc/pi-bluetooth/pi-bluetooth+re4son_2.2_all.deb kali-${architecture}/root/pi-bluetooth+re4son_2.2_all.deb
 
 cat << 'EOF' > kali-${architecture}/root/fakeuname.c
 #define _GNU_SOURCE
