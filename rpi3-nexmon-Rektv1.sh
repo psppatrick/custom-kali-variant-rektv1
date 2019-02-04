@@ -35,7 +35,8 @@ arm="abootimg cgpt fake-hwclock ntpdate u-boot-tools vboot-utils vboot-kernel-ut
 base="apt-transport-https apt-utils console-setup e2fsprogs firmware-linux firmware-realtek firmware-atheros firmware-libertas ifupdown initramfs-tools iw kali-defaults man-db mlocate netcat-traditional net-tools parted psmisc rfkill screen snmpd snmp sudo tftp tmux unrar usbutils vim wget zerofree"
 desktop="kali-menu fonts-croscore fonts-crosextra-caladea fonts-crosextra-carlito gtk3-engines-xfce kali-desktop-xfce kali-root-login lightdm network-manager network-manager-gnome xfce4 xserver-xorg-video-fbdev xserver-xorg-input-evdev xserver-xorg-input-synaptics"
 #hashcat is outdated, update to hashcat-data
-tools="nmap ncrack sqlmap aircrack-ng john hashcat-data wireshark metasploit-framework wifite dnsmap ismtp cowpatty kismet burpsuite reaver ettercap-graphical mitmproxy httptunnel webshells"
+#dnsmap not found, removed temporarily until full build successful
+tools="nmap ncrack sqlmap aircrack-ng john hashcat-data wireshark metasploit-framework wifite ismtp cowpatty kismet burpsuite reaver ettercap-graphical mitmproxy httptunnel webshells"
 services="apache2 atftpd openssh-server mariadb-server adminer php php-mysql php-json nodejs npm"
 #tools="aircrack-ng crunch cewl dnsrecon dnsutils ethtool exploitdb hydra john libnfc-bin medusa metasploit-framework mfoc ncrack nmap passing-the-hash proxychains recon-ng sqlmap tcpdump theharvester tor tshark usbutils whois windows-binaries winexe wpscan wireshark"
 #services="apache2 atftpd openssh-server openvpn tightvncserver"
