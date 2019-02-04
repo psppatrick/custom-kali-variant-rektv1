@@ -29,11 +29,11 @@ git clone git://github.com/offensive-security/gcc-arm-eabi-linaro-4.6.2.git; ech
 export ARCH=arm
 export CROSS_COMPILE=~/arm-stuff//gcc-arm-eabi-linaro-4.6.2/bin/
 
-cd ~/arm-stuff/kali-arm-build-scripts
-
-./build-deps.sh; echo $?
+~/arm-stuff/kali-arm-build-scripts/build-deps.sh; echo $?
 
 echo "Will now Build RektV1 for Pi0"
+
+chmod 777 ~/arm-stuff/custom-kali-variant-rektv1/rpi0w-nexmon-Rektv1.sh
 
 sleep 0.05
 
@@ -41,6 +41,6 @@ cp ~/arm-stuff/custom-kali-variant-rektv1/rpi0w-nexmon-Rektv1.sh ~/arm-stuff/kal
 
 sleep 0.05
 
-./rpi0w-nexmon-Rektv1.sh 1.0; echo $?; finishTime=$(date); echo "Time started" $startTime "Time Finished" $finishTime >> ~/Pi0wbuildlog.txt
+/arm-stuff/kali-arm-build-scripts/rpi0w-nexmon-Rektv1.sh 1.0; echo $?; finishTime=$(date); echo "Time started" $startTime "Time Finished" $finishTime >> ~/Pi0wbuildlog.txt
 
 echo "Finished!"
