@@ -48,7 +48,8 @@ machine=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 16 | head -n 1)
 arm="abootimg cgpt fake-hwclock ntpdate vboot-utils vboot-kernel-utils u-boot-tools"
 base="apt-transport-https apt-utils console-setup e2fsprogs firmware-linux firmware-realtek firmware-atheros firmware-libertas ifupdown initramfs-tools iw kali-defaults man-db mlocate netcat-traditional net-tools network-manager parted psmisc rfkill screen snmpd snmp sudo tftp tmux unrar usbutils vim wget zerofree"
 desktop="fonts-croscore fonts-crosextra-caladea fonts-crosextra-carlito gnome-theme-kali gtk3-engines-xfce kali-desktop-xfce kali-root-login lightdm network-manager network-manager-gnome xfce4 xserver-xorg-video-fbdev xserver-xorg-input-evdev xserver-xorg-input-synaptics"
-tools="nmap ncrack sqlmap aircrack-ng john hashcat wireshark metasploit-framework wifite dnsmap ismtp cowpatty kismet burpsuite reaver ettercap-graphical mitmproxy httptunnel webshells"
+#hashcat is unavailable, switch to hashcat-data
+tools="nmap ncrack sqlmap aircrack-ng john hashcat-data wireshark metasploit-framework wifite dnsmap ismtp cowpatty kismet burpsuite reaver ettercap-graphical mitmproxy httptunnel webshells"
 services="apache2 atftpd openssh-server mariadb-server adminer php php-mysql php-json nodejs npm"
 #extras="alsa-utils bluez bluez-firmware i2c-tools lua5.1 python-configobj python-pip python-requests python-rpi.gpio python-smbus triggerhappy whiptail wpasupplicant"
 
