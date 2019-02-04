@@ -52,9 +52,9 @@ desktop="fonts-croscore fonts-crosextra-caladea fonts-crosextra-carlito gnome-th
 #dnsmap not available for Pi3, will build without to start with, and install manually later to find package name
 tools="nmap ncrack sqlmap aircrack-ng john hashcat-data wireshark metasploit-framework wifite ismtp cowpatty kismet burpsuite reaver ettercap-graphical mitmproxy httptunnel webshells"
 services="apache2 atftpd openssh-server mariadb-server adminer php php-mysql php-json nodejs npm"
-#extras="alsa-utils bluez bluez-firmware i2c-tools lua5.1 python-configobj python-pip python-requests python-rpi.gpio python-smbus triggerhappy whiptail wpasupplicant"
+extras="alsa-utils bluez bluez-firmware i2c-tools lua5.1 python-configobj python-pip python-requests python-rpi.gpio python-smbus triggerhappy whiptail wpasupplicant"
 
-packages="${arm} ${base} ${desktop} ${tools} ${services}"
+packages="${arm} ${base} ${desktop} ${tools} ${services} ${extras}"
 architecture="armel"
 # If you have your own preferred mirrors, set them here.
 # After generating the rootfs, we set the sources.list to the default settings.
