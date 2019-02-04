@@ -50,7 +50,7 @@ tools="nmap ncrack sqlmap aircrack-ng john hashcat-data wireshark metasploit-fra
 services="apache2 atftpd openssh-server mariadb-server adminer php php-mysql php-json nodejs npm"
 extras="alsa-utils bluez bluez-firmware i2c-tools lua5.1 python-configobj python-pip python-requests python-rpi.gpio python-smbus triggerhappy whiptail wpasupplicant"
 
-packages="${arm} ${base} ${services} ${extras}"
+packages="${arm} ${base} ${tools} ${services} ${extras}"
 architecture="armel"
 # If you have your own preferred mirrors, set them here.
 # After generating the rootfs, we set the sources.list to the default settings.
